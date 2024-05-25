@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pergunta Sim ou Não</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6e6fa; /* Roxo claro */
+            display: flex;
+            flex-direction: column; /* Empilha os elementos verticalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 24px;
+            color: #4b0082; /* Roxo escuro */
+            text-align: center; /* Centraliza o texto */
+            margin-bottom: 20px; /* Espaçamento abaixo da pergunta */
+        }
+        .button-container {
+            display: flex;
+        }
+        button {
+            font-size: 18px;
+            background-color: #9370db; /* Roxo médio */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px; /* Espaçamento entre os botões */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #7b68ee; /* Roxo mais escuro ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Baby hoje é um dia especial?</h1>
+    <div class="button-container">
+        <button onclick="respostaSim()">Sim</button>
+        <button onclick="respostaNao()">Não</button>
+    </div>
+
+    <script>
+        function respostaSim() {
+            window.location.href = "especial.html";
+        }
+
+        function respostaNao() {
+            window.location.href = "erro404.html";
+        }
+    </script>
+</body>
+</html>
